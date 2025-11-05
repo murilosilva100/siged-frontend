@@ -1,6 +1,6 @@
 import React from "react";
-import useLoginForm from "../hooks/useLoginForm";
-import "../assets/styles/login.css";
+import useLoginForm from "../../hooks/useLoginForm";
+import "../../assets/styles/login.css";
 
 const LoginScreen = () => {
   const {

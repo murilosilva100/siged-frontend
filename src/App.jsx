@@ -1,10 +1,9 @@
-import { useState } from 'react'
-import Login from "../src/pages/Login"
-import './App.css'
+import LoginPage from "./pages/LoginPage";
+import "../src/App.css"
 
 function App() {
   return (
-    <Login />
+    <LoginPage />
   );
 }
 

@@ -2,7 +2,7 @@ import React from "react";
 import useLoginForm from "../../hooks/useLoginForm";
 import "../../assets/styles/login.css";
 
-const LoginScreen = () => {
+const LoginForm = () => {
   const {
     email,
     setEmail,
@@ -17,6 +17,7 @@ const LoginScreen = () => {
     <div className="login-container">
       <div className="login-card">
         <h1 className="login-title">Velo Escolas</h1>
+        
 
         <form onSubmit={handleSubmit}>
           {error && (
@@ -74,4 +75,4 @@ const LoginScreen = () => {
   );
 };
 
-export default LoginScreen;
+export default LoginForm;

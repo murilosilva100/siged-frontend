@@ -1,10 +1,12 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const useLoginForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
+  const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
     setError(null);
@@ -15,6 +17,7 @@ const useLoginForm = () => {
     setTimeout(() => {
       if (email === "gestor@siged.com" && password === "12345") {
         console.log("Login bem-sucedido!");
+        navigate("/homepage");
       } else {
         setError("Credenciais inválidas. Tente novamente.");
       }
